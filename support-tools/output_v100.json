@@ -1,3 +1,28 @@
+Current Mongosh Log ID:	64090bb04403f5f829a954dc
+Connecting to:		mongodb://<credentials>@localhost:27013/admin?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.8.0
+Using MongoDB:		6.0.4
+Using Mongosh:		1.8.0
+
+For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
+
+------
+   The server generated these startup warnings when booting
+   2023-03-08T16:57:16.589-05:00: Soft rlimits for open file descriptors too low
+------
+
+------
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+   
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+   
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+------
+
+Loading file: getMongoData_mar2023.js
 [
     {
         "command": "function (...args) {\n                return shellApi[name](...args);\n            }",
