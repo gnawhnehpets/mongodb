@@ -301,7 +301,8 @@ function printDataInfo(isMongoS) {
 
     if (dbs.databases) {
         dbs.databases.forEach(function(mydb) {
-            if (mydb.name != 'local'){
+            // if (mydb.name != 'local'){
+            try {
                 var collections = printInfo("List of collections for database '"+ mydb.name +"'",
                                         function(){
 					    var collectionNames = []
@@ -381,8 +382,11 @@ function printDataInfo(isMongoS) {
                                 }, section);
                     });
                 }
+            } catch(err) {
+                // console.log(err);
+                print("Unsuccessful against '" + mydb.name + "':");
+                print(">>> " + err);
             }
-            
         });
     }
 }
